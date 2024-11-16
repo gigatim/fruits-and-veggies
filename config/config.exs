@@ -42,7 +42,10 @@ config :proxy, ProxyWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Proxy.PubSub,
-  live_view: [signing_salt: "/s/peG++"]
+  live_view: [signing_salt: "/s/peG++"],
+  server: false
+
+config :main_proxy, http: [port: 4000]
 
 # Configures the mailer
 #
@@ -73,7 +76,8 @@ config :veggies, VeggiesWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Veggies.PubSub,
-  live_view: [signing_salt: "8aLMvnOz"]
+  live_view: [signing_salt: "8aLMvnOz"],
+  server: false
 
 # Configures the mailer
 #
@@ -104,7 +108,8 @@ config :fruits, FruitsWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Fruits.PubSub,
-  live_view: [signing_salt: "k5yYCmCi"]
+  live_view: [signing_salt: "k5yYCmCi"],
+  server: false
 
 # Configures the mailer
 #

@@ -16,7 +16,8 @@ defmodule Proxy.Application do
       # Start a worker by calling: Proxy.Worker.start_link(arg)
       # {Proxy.Worker, arg},
       # Start to serve requests, typically the last entry
-      ProxyWeb.Endpoint
+      ProxyWeb.Endpoint,
+      Proxy.Proxy,
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

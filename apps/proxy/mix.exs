@@ -45,7 +45,10 @@ defmodule Proxy.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.5"}
+      {:bandit, "~> 1.5"},
+      {:main_proxy, "~> 0.1"},
+      {:fruits, in_umbrella: true},
+      {:veggies, in_umbrella: true},
     ]
   end
 

@@ -7,6 +7,8 @@ defmodule VeggiesWeb.Router do
 
   scope "/api", VeggiesWeb do
     pipe_through :api
+
+    get "/", VeggiesController, :index
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

@@ -7,6 +7,8 @@ defmodule FruitsWeb.Router do
 
   scope "/api", FruitsWeb do
     pipe_through :api
+
+    get "/", FruitsController, :index
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development

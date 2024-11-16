@@ -6,7 +6,16 @@ defmodule FoodUmbrella.MixProject do
       apps_path: "apps",
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      releases: [
+        food_umbrella: [
+          applications: [
+            proxy: :permanent,
+            fruits: :permanent,
+            veggies: :permanent,
+          ]
+        ]
+      ]
     ]
   end
 
